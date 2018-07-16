@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.liar.passbox.DetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000">
+
+        <!--自定义控件-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:srcCompat="@drawable/detail_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Details" />
+
+        <ImageButton
+            android:id="@+id/EditBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10sp"
+            android:background="@android:color/black"
+            android:backgroundTint="@android:color/black"
+            app:srcCompat="@drawable/edit_button" />
+
+        <ImageButton
+            android:id="@+id/DelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10sp"
+            android:background="@android:color/black"
+            android:backgroundTint="@android:color/black"
+            app:srcCompat="@drawable/delete_button" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <TableLayout
+        android:shrinkColumns="1"
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow android:gravity="center">
+            <TextView
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="名称：" />
+            <TextView
+                android:id="@+id/AppShow"
+                android:gravity="center"
+                android:padding="3dp" />
+        </TableRow>
+
+        <TableRow android:gravity="center">
+            <TextView
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="账号：" />
+            <TextView
+                android:id="@+id/UserShow"
+                android:gravity="center"
+                android:padding="3dp" />
+        </TableRow>
+
+        <TableRow android:gravity="center">
+            <TextView
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="密码：" />
+            <TextView
+                android:id="@+id/PassShow"
+                android:gravity="center"
+                android:padding="3dp" />
+        </TableRow>
+
+        <TableRow android:gravity="center">
+            <TextView
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="网站：" />
+            <TextView
+                android:id="@+id/WebShow"
+                android:gravity="center"
+                android:padding="3dp" />
+        </TableRow>
+
+        <TableRow android:gravity="center">
+            <TextView
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="备注：" />
+            <TextView
+                android:id="@+id/PSShow"
+                android:gravity="center"
+                android:padding="3dp" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
